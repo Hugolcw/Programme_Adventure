@@ -1,0 +1,19 @@
+# 忽略编译文件
+*.o
+*.out
+*.exe
+*.bin
+*.obj
+
+# 忽略可执行文件
+calculator
+even_checker
+multiples_of_three
+circle_calculator
+
+# 忽略编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
