@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int findMax(int a, int b, int c)
+int findMax(int a, int b, int c);
 
 int main() {
     int num1, num2 ,num3;
