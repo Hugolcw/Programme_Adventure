@@ -17,7 +17,7 @@ int main()
 
         bool found = false;
 
-        for (int i = 1; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
             int max_val = a[i][0];
             int max_col_index = 0;
