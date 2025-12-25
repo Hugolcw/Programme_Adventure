@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string>
 #include <algorithm>
 
 using namespace std;
@@ -26,7 +25,7 @@ int main()
     cout << endl;
 
     // 2. std::count_if
-    // 统计 vector 中有多少个“奇数
+    // 统计 vector 中有多少个"奇数"
     cout << "--- std::count_if ---" << endl;
 
     // count_if(begin, end, predicate_function)
