@@ -1,21 +1,31 @@
-# 忽略编译文件
-*.o
-*.out
+# 编译生成的文件
 *.exe
-*.bin
+*.o
 *.obj
+*.out
 
-# 忽略可执行文件
-calculator
-even_checker
-multiples_of_three
-circle_calculator
+# 可执行文件（无扩展名）
+# 注意：这可能会忽略一些合法的无扩展名文件，但通常 C++ 项目不会有这种情况
 
-# 忽略编辑器文件
+# 构建目录
+build/
+bin/
+obj/
+
+# IDE 相关
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-期末复习/
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.log
+
+# PDF 文件的 Zone.Identifier（Windows 下载标记）
+*.pdf:Zone.Identifier
