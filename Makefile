@@ -17,7 +17,7 @@ help:
 	@echo "  make clean           - 清理所有编译生成的文件"
 	@echo ""
 	@echo "示例:"
-	@echo "  make cpp_daily_practice/guide_of_cumputers/火车相遇.cpp"
+	@echo "  make cpp_daily_practice/computer_guide/programming_problems/train_meeting.cpp"
 	@echo "  make lesson1.data-type/examples/data_types_tutorial/data_types_tutorial.cpp"
 
 # 编译单个文件的规则
@@ -28,7 +28,7 @@ help:
 	@echo "编译完成: $(basename $@)"
 
 # 查找所有 .cpp 文件并编译
-CPP_FILES := $(shell find . -name "*.cpp" -not -path "./期末复习/*")
+CPP_FILES := $(shell find . -name "*.cpp" -not -path "./final_review/*")
 
 all: $(CPP_FILES)
 	@echo "所有文件编译完成！"

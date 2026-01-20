@@ -14,12 +14,12 @@
 
 #### 编译单个文件
 ```bash
-./build.sh cpp_daily_practice/guide_of_cumputers/火车相遇.cpp
+./build.sh cpp_daily_practice/computer_guide/programming_problems/train_meeting.cpp
 ```
 
 #### 编译并运行
 ```bash
-./build.sh -r cpp_daily_practice/guide_of_cumputers/火车相遇.cpp
+./build.sh -r cpp_daily_practice/computer_guide/programming_problems/train_meeting.cpp
 ```
 
 #### 编译所有文件
@@ -41,7 +41,7 @@
 
 #### 编译单个文件
 ```bash
-make cpp_daily_practice/guide_of_cumputers/火车相遇.cpp
+make cpp_daily_practice/computer_guide/programming_problems/train_meeting.cpp
 ```
 
 #### 编译所有文件
@@ -67,7 +67,7 @@ g++ -std=c++17 -Wall -Wextra -O2 -o 输出文件名 源文件.cpp
 
 例如：
 ```bash
-g++ -std=c++17 -Wall -Wextra -O2 -o 火车相遇 cpp_daily_practice/guide_of_cumputers/火车相遇.cpp
+g++ -std=c++17 -Wall -Wextra -O2 -o train_meeting cpp_daily_practice/computer_guide/programming_problems/train_meeting.cpp
 ```
 
 ## 编译选项说明
@@ -83,7 +83,7 @@ g++ -std=c++17 -Wall -Wextra -O2 -o 火车相遇 cpp_daily_practice/guide_of_cum
 Programme_Adventure/
 ├── cpp_daily_practice/          # 日常练习
 │   ├── basic_*/                 # 基础练习
-│   └── guide_of_cumputers/      # 计算机导论练习
+│   └── computer_guide/          # Computer guide exercises
 ├── lesson1.data-type/           # 第1课：数据类型
 ├── lesson2.function-and-scope/  # 第2课：函数和作用域
 ├── lesson3.array-and-pointer/  # 第3课：数组和指针
@@ -94,7 +94,7 @@ Programme_Adventure/
 ├── lesson8.STL_Containers/      # 第8课：STL 容器
 ├── lesson9.STL_Algorithms/      # 第9课：STL 算法
 ├── lesson10.move_semantics/     # 第10课：移动语义
-├── 期末复习/                    # 期末复习资料
+├── final_review/                # Final review materials
 ├── Makefile                     # Make 构建文件
 ├── build.sh                     # 编译脚本
 └── README_BUILD.md              # 本文档
@@ -137,12 +137,12 @@ export PATH="/mingw64/bin:$PATH"
 
 运行方式：
 ```bash
-./cpp_daily_practice/guide_of_cumputers/火车相遇
+./cpp_daily_practice/computer_guide/programming_problems/train_meeting
 ```
 
 或者在 Windows 下：
 ```bash
-./cpp_daily_practice/guide_of_cumputers/火车相遇.exe
+./cpp_daily_practice/computer_guide/programming_problems/train_meeting.exe
 ```
 
 ## 注意事项

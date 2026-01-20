@@ -23,7 +23,7 @@ show_help() {
     echo "  -r, --run       编译并运行（需要指定源文件）"
     echo ""
     echo "示例:"
-    echo "  ./build.sh cpp_daily_practice/guide_of_cumputers/火车相遇.cpp"
+    echo "  ./build.sh cpp_daily_practice/computer_guide/programming_problems/train_meeting.cpp"
     echo "  ./build.sh -r lesson1.data-type/examples/data_types_tutorial/data_types_tutorial.cpp"
     echo "  ./build.sh -a"
     echo "  ./build.sh -c"
@@ -76,7 +76,7 @@ compile_file() {
 # 编译所有文件
 compile_all() {
     echo -e "${YELLOW}正在查找所有 .cpp 文件...${NC}"
-    local files=$(find . -name "*.cpp" -not -path "./期末复习/*")
+    local files=$(find . -name "*.cpp" -not -path "./final_review/*")
     local count=0
     local success=0
     local failed=0
@@ -102,10 +102,10 @@ clean_files() {
     echo -e "${YELLOW}正在清理编译生成的文件...${NC}"
     
     # 删除可执行文件（Windows 下可能是 .exe）
-    find . -type f \( -name "*.exe" -o -perm +111 \) -not -path "./期末复习/*" -delete 2>/dev/null
+    find . -type f \( -name "*.exe" -o -perm +111 \) -not -path "./final_review/*" -delete 2>/dev/null
     
     # 删除 .o 文件
-    find . -name "*.o" -not -path "./期末复习/*" -delete 2>/dev/null
+    find . -name "*.o" -not -path "./final_review/*" -delete 2>/dev/null
     
     echo -e "${GREEN}清理完成!${NC}"
 }
